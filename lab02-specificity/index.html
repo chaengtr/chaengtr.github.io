@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lab02 Css Specificity</title>
+	<meta name="description" content="Test Google Fonts">
+  	<meta name="author" content="ProgrammerThailand">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style-sample.css">
+</head>
+<body>
+	<div id="header">
+		<header>
+			<h1> CSS Specificity </h1>
+		</header>
+		
+		<h3> Selector มี Specificity Value ไม่เท่ากัน </h3>
+		<p> 
+		เมื่อมี Selector มากกว่าหนึ่งทางเลือก ตัวที่ถูกเลือกใช้งานจะเป็นตัวที่มี Specificity Value มากที่สุด แต่ถ้ามี Specificity Value เท่ากัน จะเลือกตัวล่าสุดมาใช้งาน
+		</p>
+	</div>
 
+	<div id="ex1">
+		<section class="text">
+			<pre>
+	ตัวอย่างที่ 1: Selector มีเพียงตัวเดียว (เลือก Selector นั้น)
+			p1 {
+			    color: red;
+			}
+			</pre>
+		</section>
+		<p1 class="active"> This is my result. </p1>
+	</div>
+
+	<div id="ex2">
+		<section class="text">
+			<pre>
+	ตัวอย่างที่ 2: Selector มีมากกว่าหนึ่งตัว (เลือกตัวที่ Specificity Value มากสุด)
+			p2.active {
+			    color: green;
+			}
+			p2 {
+			    color: red;
+			}
+			</pre>
+		</section>
+		<p2 class="active"> This is my result. </p2>
+	</div>
+
+	<div id="ex3">
+		<section class="text">
+			<pre>
+	ตัวอย่างที่ 3: Selector ที่เหมือนกัน (เลือก Selector ตัวล่าสุด)
+			p3.active {
+			    color: green;
+			}
+			p3.active {
+			    color: blue;
+			}
+			</pre>
+		</section>
+		<p3 class="active"> This is my result. </p3>
+	</div>
+</body>
+</html>
