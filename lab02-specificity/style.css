@@ -1,0 +1,13 @@
+h1 {
+	text-align: center;
+}
+
+#header { background:#CD5C5C; color:#FFFFFF; padding:10px; }
+
+#ex1 { background:#FFEBCD; }
+
+#ex2 { background:#FFDEAD; }
+
+#ex3 { background:#DEB887; }
+
+#ex1, #ex2, #ex3 { color:#000000; padding:10px; }

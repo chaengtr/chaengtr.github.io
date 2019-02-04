@@ -1,0 +1,19 @@
+p1 {
+	color: red;
+}
+
+p2.active {
+	color: green;
+}
+
+p2 {
+	color: red;
+}
+
+p3.active {
+	color: green;
+}
+
+p3.active {
+	color: blue;
+}
