@@ -1,0 +1,59 @@
+html {
+    background-image: url("wood-1759566_1920.jpg");
+}
+* {
+    box-sizing: border-box;
+}
+input[type=text], input[type=date], input[type=file] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=submit] {
+    margin: 10px 0px;
+    cursor: pointer;
+    float: right;
+}
+.data-field {
+    background-color: rgba(255, 227, 166, 0.651);
+    padding: 20px 150px 80px 150px;
+    font-size: 18px;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75, a {
+    color: rgb(48, 48, 48);
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.info {
+    background-color: rgba(255, 227, 166, 0.651);
+    padding: 10px;
+}
+table {
+    table-layout: auto;
+    width: 100%;
+    font-size: 18px;
+    padding: 30px 30px 30px 30px;
+}
